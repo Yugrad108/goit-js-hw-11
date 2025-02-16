@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timer & Snackbar</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Timer & Snackbar</h1>
-    <ul>
-      <li><a class="home-btn" href="./1-timer.html">Timer</a></li>
-      <li><a class="home-btn" href="./2-snackbar.html">Snackbar</a></li>
-    </ul>
+    <h1>Gallery</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search images..." />
+      <button type="submit">Search</button>
+    </form>
+    <div id="loader" class="hidden"></div>
+    <div id="gallery" class="gallery"></div>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
