@@ -36,9 +36,8 @@ function showInfo(message) {
   });
 }
 
-// Функция для очистки галереи  
 function clearGallery() {  
-  refs.gallery.innerHTML = ''; // Очищаем содержимое галереи  
+  refs.gallery.innerHTML = '';
 }  
 
 function handleFormSubmit(event) {
@@ -47,11 +46,11 @@ function handleFormSubmit(event) {
 
   if (!query) {
     showError('Please enter a search term!');
-    clearGallery(); // Очищаем галерею при неверном запросе
+    clearGallery(); 
     return;
   }
 
-clearGallery(); // Очищаем галерею перед новым запросом 
+clearGallery(); 
 
   fetchImagesWithLoader(query);
   refs.input.value = '';
